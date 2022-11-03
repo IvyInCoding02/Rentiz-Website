@@ -34,6 +34,13 @@ a{
     width: 100%;
 }
 
+.text{
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 19px;
+   color: var(--gray-text);
+}
+
 // header
 
 .header{
@@ -48,20 +55,73 @@ a{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 70px;
+        gap: clamp(1.25rem, -2.799rem + 8.44vw, 4.688rem);
     }
 
-    .menu{
+.menu{
+
+        &-icons{
+
+        }
         &__body{
-            display:flex;
-            align-items:center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             gap: 40px;
         }
-
         &__link{
             color: var(--gray-text);
-            font-weight: 600;
+            font-weight: 500;
             font-size: 16px;
         }
+
+        &:before{
+            content: "" ;
+            position: relative;
+            left: 0;
+            right: 0;
+            bottom: -5px;
+            background-color: var(--green-text);
+            height: 3px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opcity 0.3;
+            }
+
+
+    @media(any-hover:hover){
+        &:hover{
+            color: white;
+        &:before {
+            opacity: 1;
+            visibility: visible;
+        }
     }
+}
+
+        &__buttons{
+            display:flex;
+            gap: 5px;
+    }
+
+.singin{
+        background-color: var(--green-text);
+        cursor: pointer;
+
+        @media(any-hover: hover){
+            &:hover{
+                background-color: transparent;
+            }
+        }
+    }
+
+.login{
+    cursor: pointer;
+    @media(any-hover: hover){
+        &:hover{
+            background-color: var(--green-text)
+            }
+        }
+}
+}
 }

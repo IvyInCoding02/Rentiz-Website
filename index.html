@@ -1,56 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/sccs/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/scss/style.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="header__container">
-           <a class= "header__logo" href="">
-            <img src="./src/img/logo.svg" alt="Logo">
-           </a>
-        
-        <div class="header__navigations">
-            <nav class="header__menu menu">
-                <ul class="menu__body">
-                    <li class="menu__item"><a  class="menu__link" href="#">Home</a></li>
-                    <li class="menu__item"><a  class="menu__link" href="#">About Us</a></li>
-                    <li class="menu__item"><a  class="menu__link" href="#">Buying</a></li>
-                    <li class="menu__item"><a  class="menu__link" href="#">Renting</a></li>
-                    <li class="menu__item"><a  class="menu__link" href="#">Selling</a></li>
-                    <li class="menu__item"><a  class="menu__link" href="#">Contact Us</a></li>   
-                </ul>
-            </nav>
-            <div class="header__buttons">
-                <button class="header__btn login">Log In</button>
-                <button class="header__btn signin">Sign Up</button>
+  <header class="header">
+    <div class='header__container'>
+      <a href="" class="header__logo">
+        <img src="./src/img/logo (1).svg" alt="Logo">
+      </a>
+      <div class="header__navigation">
+        <nav class="header__menu menu">
+          <ul class="menu__body">
+            <li class="menu__item"><a href="" class="menu__link">home</a></li>
+            <li class="menu__item"><a href="" class="menu__link">About us</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Buying</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Renting</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Selling</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Contact us</a></li>
+          </ul>
+        </nav>
+        <div class="header__buttons">
+          <button class="header__btn login">Login</button>
+          <button class="header__btn singin">Sign Up</button>
+        </div>
+        <div class="menu-icon">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">Perfect way to buy and sell a home</h1>
+          <p class="hero__text text">Diam vitae, nec mattis lectus quam pretium amet facilisis. Urna, massa aliqua dui
+            pellentesque. Ac, gravida in eget non
+            amet eget purus non.</p>
+          <div class="hero__filters filter">
+            <div class="block__filter block-filter">
+              <div class="block-filter__button">
+                <div class="block-filter__header">
+                  <div class="block-filter__type">Purpose</div>
+                  <div class="block-filter__icon"></div>
+                </div>
+                <div class="block-filter__value">Buy</div>
+              </div>
+              <div class="block-filter__dropdown">
+                <div class="block-filter__item">Buy</div>
+                <div class="block-filter__item">Rent</div>
+              </div>
+            </div>
+            <div class="block__filter block-filter">
+              <div class="block-filter__button">
+                <div class="block-filter__header">
+                  <div class="block-filter__type">Location</div>
+                  <div class="block-filter__icon"></div>
+                </div>
+                <div class="block-filter__value">Toronto, Kanada</div>
+              </div>
+              <div class="block-filter__dropdown">
+                <div class="block-filter__item">Tokio, Japan</div>
+                <div class="block-filter__item">New-York , USA</div>
+                <div class="block-filter__item">Paris, France</div>
+              </div>
+            </div>
+            <div class="block__filter block-filter">
+              <div class="block-filter__button">
+                <div class="block-filter__header">
+                  <div class="block-filter__type">Type</div>
+                  <div class="block-filter__icon"></div>
+                </div>
+                <div class="block-filter__value">Industrial home</div>
+              </div>
+              <div class="block-filter__dropdown">
+                <div class="block-filter__item">Сарай</div>
+                <div class="block-filter__item">Особняк</div>
+                <div class="block-filter__item">Квартира</div>
+              </div>
+            </div>
+            <div class="filter__btn">
+              <button>Search</button>
+            </div>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="./src/img/hero.jpg" alt="hero">
+        </div>
+      </div>
+    </section>
+    <section class="featured">
+        <div class="feautured__container">
+            <h2 class="featured__title">Featured In</h2>
+            <div class="featured__box">
+                <div class="featured__item">
+                    <img src="./src/img/logo4.svg" alt="Vin-Tage">
+                </div>
+                <div class="featured__item">
+                    <img src="./src/img/logo3.svg" alt="Violet">
+                </div>
+                <div class="featured__item">
+                    <img src="./src/img/Vector.svg" alt="ceathes">
+                </div>
+                <div class="featured__item">
+                    <img src="./src/img/logo2.svg" alt="Creater Fav">
+                </div>
+                <div class="featured__item">
+                    <img src="./src/img/logo1.svg" alt="Lavender Agency">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="menu-icons">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    </header>
-    <main class="page">
-        <section class="hero">
-            <div class="hero__container">
+    </section>
+  </main>
 
-                <div class="hero__content">
-                    <h1 class="hero__title">Perfect way to buy and sell a home </h1>
-                    <p class="hero__text">Diam vitae, nec mattis lectus quam pretium amet facilisis. 
-                        Urna, massa aliqua dui pellentesque. Ac, gravida in eget non amet eget purus non.</p>
-                </div>
-                <div class="hero__img">
-                    <img src="./src/img/pexels-binyamin-mellish-106399 2.svg" alt="Hero Image">
-                </div>
-            </div>
-        </section>
-    </main>
+  <script src="./src/js/index.js"></script>
 </body>
+
 </html>
